@@ -1,6 +1,8 @@
 [![PRETTIER](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://gitter.im/jlongster/prettie)
 [![LICENSE](https://img.shields.io/github/license/arshadkazmi42/awesome-github-init.svg)](https://github.com/arshadkazmi42/awesome-github-init/LICENSE)
 
+[![HitCount](http://hits.dwyl.com/lucioerlan/Automation-request.svg)](http://hits.dwyl.com/lucioerlan/Automation-request)
+
 ![buildersoap](https://user-images.githubusercontent.com/67064886/89115436-96308d00-d45e-11ea-9f3e-23cc2a67e200.gif)
 <br>
 
