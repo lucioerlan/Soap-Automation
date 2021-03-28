@@ -13,5 +13,5 @@ exports.up = (knex) => {
 };
 
 exports.down = (knex) => {
-  return knex.schema.dropTable('andress');
-};
+  return knex.schema.dropTable('andress'); 
+}; 
