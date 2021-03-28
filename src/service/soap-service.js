@@ -64,4 +64,4 @@ class SoapService extends EventEmitter {
 }
 
 
-module.exports = SoapService;
+module.exports = SoapService; 
