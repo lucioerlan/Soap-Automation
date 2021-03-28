@@ -16,3 +16,4 @@ describe('Knex Migrate, Seeds, Query', () => {
     db('andress').select('cep').then(() => done());
   });
 });
+
