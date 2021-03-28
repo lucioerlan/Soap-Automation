@@ -7,3 +7,4 @@ const soapService = new SoapService();
 soapService.on('data', (log) => logger.info(log));
 
 soapService.show();
+
