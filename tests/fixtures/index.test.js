@@ -11,3 +11,4 @@ const data = `
 </soapenv:Envelope>`;
 
 module.exports = data;
+
