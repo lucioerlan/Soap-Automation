@@ -11,4 +11,4 @@ const RemoveJsonTextAttribute = (value, parentElement) => {
 
 module.exports = {
   RemoveJsonTextAttribute
-};
+}; 
