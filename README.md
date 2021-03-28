@@ -1,102 +1,116 @@
+<!-- PROJECT SHIELDS -->
 [![PRETTIER](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://gitter.im/jlongster/prettie)
 [![LICENSE](https://img.shields.io/github/license/arshadkazmi42/awesome-github-init.svg)](https://github.com/arshadkazmi42/awesome-github-init/LICENSE)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Flucioerlan%2FAutomation-request&count_bg=%23E71A18&title_bg=%23555555&icon=dependabot.svg&icon_color=%23E7E7E7&title=views&edge_flat=false)](https://hits.seeyoufarm.com)
-
-![buildersoap](https://user-images.githubusercontent.com/67064886/89115436-96308d00-d45e-11ea-9f3e-23cc2a67e200.gif)
-<br>
-
-
-# Description 
-
-This service is just an example, of another service that I did recently, much more complex and with more important data. This service generates an xml automatically, with information from the database, and then a request is made to a web service soap, then the entire response is saved in the database.
-<br>
+[![LinkedIn][linkedin-shield]](https://www.linkedin.com/in/erlanlucio/)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/lucioerlan/Soap-Automation&count_bg=%23E71A18&title_bg=%23555555&icon=dependabot.svg&icon_color=%23E7E7E7&title=views&edge_flat=false)](https://hits.seeyoufarm.com)
+<!-- PROJECT SHIELDS -->
 
 
 
----
+<!-- PROJECT -->
+<p align="center">
+  <h3 align="center"> 
+   Soap Automation  🚴 
+  </h3> 
+  <p align="center">
+    <img src="https://user-images.githubusercontent.com/67064886/89115436-96308d00-d45e-11ea-9f3e-23cc2a67e200.gif" alt="Logo" >
+    <br />
+    <br />
+    <a href="https://github.com/lucioerlan/Soap-Automation/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/lucioerlan/Soap-Automation/issues">Request Feature</a>
+  </p>
+</p>
+<!-- PROJECT -->
 
-# Installation
 
-### Requirements
 
-You will need to install some stuff, if they are not yet installed in your machine:
+<!-- ABOUT THE PROJECT -->
+## 🤔 About The Project
 
-* [Node.js (v4.3.2 or higher; LTS)](http://nodejs.org)
-* [NPM (v3.5+; bundled with node.js installation package)](https://docs.npmjs.com/getting-started/installing-node#updating-npm)
-<br>
+ This service generates an xml automatically, with information from the database, and then  a request is made to a web-service soap, <br /> then the entire response is saved in the database.
 
----
+<br /> 
+<!-- ABOUT THE PROJECT -->
 
-### Install through Github :octocat:
 
-Best way to install is to clone it from Github
-<br>
 
-**To clone/download the boilerplate**
+<!-- INSTALLATION -->
+## 🔨 Installation
 
-```bash
-$ git clone https://github.com/lucioerlan/Automation-request.git
-```
-
-**After cloning**
-
-```bash
-$ cd Automation-request
-```
-
-**Install all of the projects dependencies with:**
+You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
 
 ```bash
+git clone https://github.com/lucioerlan/Soap-Automation.git
+
+$ cd Soap-Automation
 $ npm install
-
 ```
 
+<br />
+<!-- INSTALLATION -->
 
-### copy the .env-examples file to .env
 
-```
-$ cp .env-examples .env
-```
 
-**running**
-
-```bash
-$ npm start
+<!-- SETUP -->
+## 🔥 Setup
 
 ```
-<br>
+$ cp .env-examples .env 
 
----
-
-### Create table into Postgres
-![knex-migration](https://user-images.githubusercontent.com/67064886/89115889-efe78600-d463-11ea-9c2d-c53fdb18b528.png)
-```sh
 $ npx knex migrate:latest
-```
-<br>
-
-
-
-### Insert data into Postgres
-![seeds](https://user-images.githubusercontent.com/67064886/89115891-f118b300-d463-11ea-8666-13605e7e3bc7.png)
-```sh
 $ npx knex seed:run
 ```
-<br>
+
+<br /> 
+<!-- SETUP -->
+
+
+<!-- RUNNING TESTS -->
+## 🥇 Tests
+```bash
+$ npm test 
+```
+
+<br />
+<!-- RUNNING TESTS -->
 
 
 
-
-### Running with PM2
-
-![pm2](https://user-images.githubusercontent.com/67064886/89115890-f0801c80-d463-11ea-9e59-320df400d6d5.png)
+<!-- RUNNING -->
+## 🚀 Running
 
 ```
-$ pm2 start pm2.config,js
+$ npm start 
 ```
-<br>
 
-## 🔓 Licença 
-MIT © [Erlan Lucio](https://www.linkedin.com/in/erlanlucio/)
+<br />
+<!-- RUNNING -->
 
 
+
+<!-- LICENSE -->
+## 🔓 License
+
+This project lives under MIT License. See LICENSE for more details. © - [Erlan Lucio](https://www.linkedin.com/in/erlanlucio/)
+
+<br />
+<!-- LICENSE -->
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
+<!-- MARKDOWN LINKS & IMAGES -->
