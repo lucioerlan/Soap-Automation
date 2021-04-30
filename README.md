@@ -88,6 +88,16 @@ $ npm start
 <br />
 <!-- RUNNING -->
 
+#### Or Run Docker 🐳
+```
+$ docker network create node-net
+```
+```
+$ docker-compose up -d
+```
+
+<br>
+
 
 
 <!-- LICENSE -->
