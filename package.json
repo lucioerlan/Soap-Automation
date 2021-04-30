@@ -7,6 +7,8 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
+    "migrate": "npx knex migrate:latest",
+    "seed": "npx knex seed:run",
     "test": "mocha tests/**/*.test.js --timeout 20000 --exit",
     "lint": "eslint --fix --ext .js,.jsx ."
   },
