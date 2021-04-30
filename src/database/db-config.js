@@ -1,3 +1,3 @@
 const options = require('../../knexfile');
 
-module.exports = require('knex')(options); 
+module.exports = require('knex')(options);
