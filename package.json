@@ -23,7 +23,7 @@
     "xmlbuilder": "^8.2.2"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "7.32.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^6.1.0",
     "eslint-plugin-import": "^2.17.3",
