@@ -15,7 +15,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
-    "knex": "^0.19.5",
+    "knex": "^0.95.0",
     "moment-timezone": "^0.5.33",
     "pg": "^8.5.1",
     "winston": "^3.3.3",
