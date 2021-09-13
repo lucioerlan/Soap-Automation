@@ -9,7 +9,7 @@ networks:
 
 services:
     server:
-        image: node:12.22.3-alpine
+        image: node:16.9.1-alpine
         container_name: nodejs
         environment:
             - WSDL_CORREIOS=https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService
