@@ -63,7 +63,7 @@ $ npm install
 #### Copy or rename the file
 
 ```
-$ cp env-examples .env
+$ cp .env-examples .env
 $ npx knex migrate:latest
 $ npx knex seed:run
 ```
