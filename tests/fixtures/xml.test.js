@@ -1,4 +1,4 @@
-const data = `
+const xml = `
 <soapenv:Envelope
     xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
     xmlns:cli="http://cliente.bean.master.sigep.bsb.correios.com.br/">
@@ -10,5 +10,4 @@ const data = `
     </soapenv:Body>
 </soapenv:Envelope>`;
 
-module.exports = data;
-
+module.exports = xml;
