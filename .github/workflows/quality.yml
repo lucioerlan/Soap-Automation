@@ -1,0 +1,67 @@
+name: Quality Code
+
+on: [push]
+
+jobs:
+  quality:
+    name: Jest and Lint
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version:
+          - "12.22"
+        database-name:
+          - coordenadas
+        database-password:
+          - 123456
+        database-user:
+          - postgres
+        database-host:
+          - localhost
+        database-port:
+          - 5432
+
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_DB: ${{ matrix.database-name }}
+          POSTGRES_USER: ${{ matrix.database-user }}
+          POSTGRES_PASSWORD: ${{ matrix.database-password }}
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 5432:5432
+
+    steps:
+      - name: Check out Git Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Check code quality
+        run: npm run lint
+
+      - name: Setup and Test
+        env:
+          DB_HOST: ${{ matrix.database-host }}
+          DB_USER: ${{ matrix.database-user }}
+          DB_PASS: ${{ matrix.database-password }}
+          DB_DATABASE: ${{ matrix.database-name }}
+          NODE_ENV: development
+          WSDL_CORREIOS: https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService
+          METHOD: text/xml;charset=UTF-8
+        run: |
+          npm run migrate
+          npm run seed
+          npm run test
