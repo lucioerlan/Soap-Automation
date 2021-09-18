@@ -10,6 +10,7 @@ networks:
 services:
     server:
         image: node:12.22.3-alpine
+
         container_name: nodejs
         environment:
             - WSDL_CORREIOS=https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService
@@ -18,6 +19,8 @@ services:
             - DB_USER=postgres
             - DB_PASS=123456
             - DB_DATABASE=coordenadas
+            - NODE_ENV=development
+            - SCHEDULE_TIME=*/1 * * * *
         networks:
             - node-net
         restart: on-failure
@@ -31,7 +34,6 @@ services:
         links:
             - db
         command: sh -c "cd /home/app && npm install --save && npm run migrate && npm run seed && npm run start"
-
     db:
         image: postgres:alpine
         container_name: postgres

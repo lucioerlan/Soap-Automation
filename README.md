@@ -22,21 +22,24 @@
     <a href="https://github.com/lucioerlan/Soap-Automation/issues">Request Feature</a>
   </p>
 </p>
-<!-- PROJECT -->
 
 
 
 <!-- ABOUT THE PROJECT -->
 ## 🤔 About The Project
 
- This service generates an xml automatically, with information from the database, and then  a request is made to a web-service soap, <br /> then the entire response is saved in the database.
+Runs every 1 minute, This service generates an xml automatically, with information from the database, performs a post request to a soap webservice, <br /> then the response is saved in the database.
+
+If you have questions about creating schedules, see [Cron](https://crontab.cronhub.io/).
+
 
 <br /> 
-<!-- ABOUT THE PROJECT -->
 
+---
 
 
 <!-- INSTALLATION -->
+
 ## 🔨 Installation
 
 You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
@@ -49,43 +52,56 @@ $ npm install
 ```
 
 <br />
-<!-- INSTALLATION -->
 
+---
 
 
 <!-- SETUP -->
+
 ## 🔥 Setup
 
-```
-$ cp .env-examples .env 
+#### Copy or rename the file
 
+```
+$ cp env-examples .env
 $ npx knex migrate:latest
 $ npx knex seed:run
 ```
 
-<br /> 
-<!-- SETUP -->
+<br />
+
+---
 
 
 <!-- RUNNING TESTS -->
-## 🥇 Tests
+
+## 🤓 Running tests
+
+```
+$ npm run test
+```
+
+<br />
+
+---
+
+
+<!-- RUNNING APPLICATION -->
+
+## 🎲 Running the application
+
 ```bash
-$ npm test 
+
+# Run the application
+$ npm run start
+
 ```
 
 <br />
-<!-- RUNNING TESTS -->
+
+---
 
 
-
-<!-- RUNNING -->
-## 🚀 Running
-
-```
-$ npm start 
-```
-
-<br />
 <!-- RUNNING -->
 
 #### Or Run Docker 🐳
@@ -96,17 +112,18 @@ $ docker network create node-net
 $ docker-compose up -d
 ```
 
-<br>
+<br />
 
+---
 
 
 <!-- LICENSE -->
+
 ## 🔓 License
 
 This project lives under MIT License. See LICENSE for more details. © - [Erlan Lucio](https://www.linkedin.com/in/erlanlucio/)
 
 <br />
-<!-- LICENSE -->
 
 
 
