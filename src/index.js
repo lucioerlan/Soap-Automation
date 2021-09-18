@@ -1,9 +1,18 @@
-require('dotenv').config();
-const SoapService = require('./service/soap-service');
-const { logger } = require('./middlewares');
+require("dotenv").config();
 
-const soapService = new SoapService();
+const { logger } = require("../src/utils/logger");
+const ProcessExecute = require("./main/tasks");
 
-soapService.on('data', (log) => logger.info(log));
+class Application {
+    static async start() {
+        try {
+            logger.info("Application in execution");
 
-soapService.show();
+            ProcessExecute.start();
+        } catch (err) {
+            logger.error(err);
+        }
+    }
+}
+
+Application.start();
